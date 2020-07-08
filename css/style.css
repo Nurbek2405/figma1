@@ -1,0 +1,286 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+         url('../fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('../fonts/roboto-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* All text in top for reset css  */
+
+
+.item {
+width: 200px;
+height: 100px;
+background-color: green;
+padding: 20px;                  
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+
+}
+
+/* Header style start*/
+
+.wrapper {
+
+    padding: 0 55px 0 55px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: #007765;  
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header_logo-pic {
+    margin-top: 20px;
+    padding-bottom: 18px;
+}
+
+
+.header_list { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 29px;
+    padding-bottom: 30px;
+}
+
+.header_item {   /* Отступ ссылок в шапке от справого*/
+    margin-right: 8px;
+}
+
+.header_link {  /* Шрифт в шапке и цвет*/
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29 px;
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.header_link:hover, header_link:focus, header_link:active {
+    opacity: 0.5; /*Действия для ссылки в шапке*/
+}
+
+/* Header style end*/
+.intro {
+    margin-top: 84px;
+    background: url(../img/intro_image.jpg) 100% 100% no-repeat; /* Добавляем фон */
+    background-size: cover; /* Масштабируем фон */
+    border: 1px solid black;
+}
+
+/* Intro style start*/
+
+.intro_title {
+    margin-top: 160px;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    padding-bottom: 160px;
+   /* border: 1px solid green; Для того чтобы увидить границы*/ 
+    color: #EEEEEE;
+}
+
+.eee_background  {
+    
+    background-color: #eeeeee;   
+    
+}
+
+.title2 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    padding-top: 48px;
+    padding-bottom: 16px;
+   color: #007765;   
+ /*    border: 1px solid black;   Границы блока */
+}
+
+.big_text { 
+     font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+text-align: left;
+/* border: 1px solid yellow;  Границы блока */
+padding-bottom: 92px;   
+  }
+
+b {  
+    font-weight: 500;  
+}
+
+.blue_background {
+  /*  margin-top: 84px;    */
+    background: url(../img/2image.jpg) 100% 100% no-repeat; /* Добавляем фон */
+    background-size: cover; /* Масштабируем фон */
+ /*   border: 1px solid red; Границы блока */
+}
+
+.big_text2 {    
+padding-top: 128px;
+font-style: italic;
+font-weight: 500;
+font-size: 48px; 
+line-height: 56px;
+padding-bottom: 127px;
+color: white;
+margin: 0 120px 0 120px;
+/* border: 1px solid black; граница блока */
+}
+
+.big_text3 {    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px; 
+    line-height: 37px;
+    color: black;
+    margin: 0 71px 0 0;
+    padding-bottom: 92px;
+    text-align: left;
+    /* border: 1px solid black;  граница блока */
+    }
+
+.logo-pic2{
+    margin-top: 1em;
+     float: left; /* Выравнивание по левому краю  */ 
+    margin: 0 40px 0 55px; /* Отступы всех вокруг картинкок */
+}
+
+.white_background  {
+    background-color: #ffffff;   
+}
+
+.lineblock {
+    display: inline-block;
+    margin: 0 auto;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #007765;
+    padding: 24px 85px 91px 91px;
+}
+.textsmal {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;   
+}
+
+.podval_text {
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+padding: 48px 400px 64px 400px;
+border: 1px solid black;    
+text-align: center;
+color: white;
+}
+
+.podval {
+    background-color: #333333;
+}
+
+#link2 {
+	padding-top: -555px;
+	margin-top: 555px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+}
